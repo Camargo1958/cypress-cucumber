@@ -23,3 +23,7 @@ When('Eu entrar com credenciais de usuario invalido', () => {
 Then('Eu verei uma mensagem de usuario com problemas', () =>{
     Login.viewWrongUserErrorMessage();
 });
+
+When('Eu entrar com credenciais com senha invalida', (  ) =>{
+    Login.fillLogin(loginBuilder.loginPassInvalid);
+} );
