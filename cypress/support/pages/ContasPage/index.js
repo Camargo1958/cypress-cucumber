@@ -18,6 +18,10 @@ class ContasPage{
     viewInitialAccountsList(){
         cy.xpath(el.accountsTableHead1).should('include.text','Conta');
         cy.xpath(el.accountsTableHead2).should('include.text','Ações');
+        cy.xpath(el.account1Name).should('include.text','Conta para alterar');
+        cy.xpath(el.account6Name).should('include.text','Conta para extrato');
+        cy.xpath(el.account1ActionButtons).should('include.html','<a href=');
+        cy.xpath(el.account6ActionButtons).should('include.html','<a href=');
     }
 
 }

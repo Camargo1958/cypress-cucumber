@@ -9,7 +9,7 @@
   "author": "Hazak",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.1.0",
+    "cypress": "^8.2.0",
     "cypress-cucumber-preprocessor": "^4.2.0",
     "cypress-xpath": "^1.6.2"
   },

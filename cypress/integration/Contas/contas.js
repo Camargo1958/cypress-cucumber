@@ -39,6 +39,7 @@ When('Eu selecionar listar contas', (  ) =>{
 
 Then('Uma lista com seis contas inciais sera apresentada', (  ) =>{
     ContasPage.confirmPageTitle();
+    ContasPage.viewInitialAccountsList();
 });
 
 
