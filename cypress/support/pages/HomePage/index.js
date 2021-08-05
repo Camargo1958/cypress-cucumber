@@ -20,6 +20,10 @@ class HomePage{
         cy.xpath(el.contasListar).click();
     }
 
+    selectCriarMovimentacao(){
+        cy.xpath(el.criarMovLink).click();
+    }
+
     resetDB(){
         cy.xpath(el.resetLink).click();
     }

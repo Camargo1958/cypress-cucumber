@@ -1,4 +1,4 @@
-import { Given, When, Then, Before } from 'cypress-cucumber-preprocessor/steps';
+import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import Login from '../../support/pages/Login';
 import HomePage from '../../support/pages/HomePage';
 import AddContaPage from '../../support/pages/AddContaPage';
