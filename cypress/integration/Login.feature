@@ -1,4 +1,4 @@
-Feature: Login do site Seubarriga
+Feature: Login e logout do site Seubarriga
 
   Eu desejo me logar no site seubarriga
   
@@ -19,3 +19,10 @@ Feature: Login do site Seubarriga
     Given Eu acesse a pagina do seubarriga
     When Eu entrar com credenciais com senha invalida
     Then Eu verei uma mensagem de usuario com problemas
+
+  @logout_sucesso
+  Scenario: Realizar logout com sucesso
+    Given Eu acesse a pagina do seubarriga
+    And Eu realize login com sucesso
+    When Eu selecionar Sair
+    Then O logout sera realizado com sucesso

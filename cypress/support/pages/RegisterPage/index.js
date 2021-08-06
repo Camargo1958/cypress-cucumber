@@ -15,7 +15,7 @@ class RegisterPage{
     }
 
     viewUrlRegisterPage(){
-        cy.url().should('be.equal',`${Cypress.config('baseUrl')}/cadastro`);
+        cy.url().should('be.equal',`${Cypress.config('testURL')}/cadastro`);
     }
 }
 

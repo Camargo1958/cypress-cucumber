@@ -24,6 +24,14 @@ class HomePage{
         cy.xpath(el.criarMovLink).click();
     }
 
+    selectResumoMensal(){
+        cy.xpath(el.resumoMensalLink).click();
+    }
+
+    selectSair(){
+        cy.xpath(el.sairLink).click();
+    }
+
     resetDB(){
         cy.xpath(el.resetLink).click();
     }

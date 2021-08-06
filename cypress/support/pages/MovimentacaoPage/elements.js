@@ -7,7 +7,6 @@ export const ELEMENTS = {
     description: '//*[@id="descricao"]',
     interested: '//*[@id="interessado"]',
     value: '//*[@id="valor"]',
-    //accountSelector: '//*[@id="conta"]',
     accountSelector: '#conta',
     statusClosedButton: '//*[@id="status_pago"]',
     statusDueButton: '//*[@id="status_pendente"]',

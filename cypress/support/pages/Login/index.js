@@ -6,6 +6,14 @@ class Login{
         cy.visit(`${Cypress.config('testURL')}/login`);
     }
 
+    viewUrlLoginPage(){
+        cy.url().should('be.equal',`${Cypress.config('testURL')}/login`);
+    }
+
+    viewUrlLogoutPage(){
+        cy.url().should('be.equal',`${Cypress.config('testURL')}/logout`);
+    }
+
     fillLogin(data){
         cy.get(el.username).invoke('val', data.username);
         cy.get(el.password).invoke('val', data.password);

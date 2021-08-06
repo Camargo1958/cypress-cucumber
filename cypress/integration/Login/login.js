@@ -27,3 +27,17 @@ Then('Eu verei uma mensagem de usuario com problemas', () =>{
 When('Eu entrar com credenciais com senha invalida', (  ) =>{
     Login.fillLogin(loginBuilder.loginPassInvalid);
 } );
+
+Given('Eu realize login com sucesso', (  ) =>{
+    Login.fillLogin(loginBuilder.loginSuccess);
+    HomePage.viewSuccessMessage();
+    HomePage.viewUrlHomePage();
+});
+
+When('Eu selecionar Sair', (  ) =>{
+    HomePage.selectSair();
+});
+
+Then('O logout sera realizado com sucesso', (  ) =>{
+    Login.viewUrlLogoutPage();
+});
