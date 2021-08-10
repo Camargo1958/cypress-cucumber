@@ -11,11 +11,18 @@ class RegisterPage{
         cy.xpath(el.nameField).invoke('val', data.username);
         cy.xpath(el.emailField).invoke('val', data.email);
         cy.xpath(el.passwordField).invoke('val', data.password);
-        //cy.get(el.buttonLogin).click();
+    }
+
+    selectRegisterButton(){
+        cy.xpath(el.registerButton).click();
     }
 
     viewUrlRegisterPage(){
         cy.url().should('be.equal',`${Cypress.config('testURL')}/cadastro`);
+    }
+
+    confirmSuccessMesage(){
+        cy.xpath(el.message).should('include.text','Usuário inserido com sucesso');
     }
 }
 
