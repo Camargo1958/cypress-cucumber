@@ -1,4 +1,6 @@
 {
     "testFiles": "*.feature",
-    "testURL": "https://seubarriga.wcaquino.me"
+    "testURL": "https://seubarriga.wcaquino.me",
+    "bdHomeURL": "https://blazedemo.com/",
+    "bdReserveURL": "https://blazedemo.com/reserve.php"
 }

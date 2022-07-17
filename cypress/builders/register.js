@@ -1,9 +1,11 @@
+const faker = require("faker")
+
 const registerBuilder = {
   
     registerSuccess : {
-        username : Cypress.env("new_user").username,
-        email: Cypress.env("new_user").email, 
-        password : Cypress.env("new_user").password
+        username : faker.name.findName(),
+        email: faker.internet.email(), 
+        password : faker.internet.password()
       }
 }
 

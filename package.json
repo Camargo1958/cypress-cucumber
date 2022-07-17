@@ -6,14 +6,15 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run"
   },
   "author": "Hazak",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^8.2.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "faker": "^5.5.3"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
