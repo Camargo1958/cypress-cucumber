@@ -10,10 +10,9 @@ jobs:
         uses: actions/checkout@v2
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: npm audit fix
-        uses: cypress-io/github-action@v2
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          fix: npm audit fix
           build: npm run build
           start: npm start
